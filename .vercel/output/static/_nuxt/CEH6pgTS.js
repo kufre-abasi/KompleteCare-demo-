@@ -1,4 +1,4 @@
-import{g as i}from"./DPKqo1zD.js";const s=i`
+import{g as i}from"./iMGPiNt9.js";const s=i`
   query GetInvestigations {
     id
     title
