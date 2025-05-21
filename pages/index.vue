@@ -45,7 +45,7 @@
       </div>
 
       <!-- Main Content -->
-      <div class="col-md-9 hidden">
+      <div class="col-md-10 hidden">
         <div
           class="d-flex align-items-center justify-content-end gap-4 border-5 mt-5"
         >
