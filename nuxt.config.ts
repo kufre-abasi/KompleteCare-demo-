@@ -3,7 +3,7 @@ export default defineNuxtConfig({
   compatibilityDate: "2024-11-01",
 
   devtools: { enabled: true },
-  css: ["bootstrap/dist/css/bootstrap.min.css"],
+  css: ["bootstrap/dist/css/bootstrap.min.css","~/assets/main.css","bootstrap-icons/font/bootstrap-icons.css"],
   modules: ["@nuxt/eslint"],
 
   runtimeConfig: {

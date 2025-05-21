@@ -1,0 +1,374 @@
+@import url('https://fonts.cdnfonts.com/css/avenir');
+@import url('https://fonts.cdnfonts.com/css/product-sans-infanity');
+ @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+ :root {
+    --primary: #382f90;
+    --primary-hover: #2a2470;
+    --secondary: #6c757d;
+    --success: #198754;
+    --danger: #dc3545;
+    --warning: #ffc107;
+    --info: #0dcaf0;
+    --light: #f8f9fa;
+    --dark: #212529;
+  }
+  
+  body {
+    font-family: 'Avenir', sans-serif;
+    color: #333;
+    background-color: #f8f9fa;
+  }
+  
+  .text-primary {
+    color: var(--primary) !important;
+  }
+  
+  .bg-primary {
+    background-color: var(--primary) !important;
+  }
+  
+  .btn-primary {
+    background-color: var(--primary);
+    border-color: var(--primary);
+  }
+  
+  .btn-primary:hover,
+  .btn-primary:focus {
+    background-color: var(--primary-hover);
+    border-color: var(--primary-hover);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .main-content {
+      margin-left: 0;
+    }
+  }
+
+
+/* Additional responsive styles */
+@media (max-width: 767.98px) {
+    .container-fluid {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  
+    h1 {
+      font-size: 1.75rem;
+    }
+  
+    .row {
+      margin-left: -0.5rem;
+      margin-right: -0.5rem;
+    }
+  
+    .col,
+    [class*="col-"] {
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+    }
+  }
+  
+  /* Fix for mobile scrolling when sidebar is open */
+  body.sidebar-open {
+    overflow: hidden;
+  }
+  
+  html {
+  scroll-behavior: smooth;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+body {
+  min-height: 100vh;
+  font-family: 'Avenir', sans-serif;
+                                                
+  transition:
+    color 0.5s,
+    background-color 0.5s;
+  line-height: 1.6;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ }
+p {
+    font-family: 'Avenir', sans-serif;
+ }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Avenir', sans-serif;
+ }
+@layer base {
+  body {
+    font-family: 'Avenir', sans-serif;
+}
+}
+.container {
+  max-width: 1100px;
+  padding-right: 9px;
+  padding-left: 9px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.Product-Sans{
+font-family: 'Product Sans Infanity', sans-serif;
+             }        
+             .lato-thin {
+                font-family: "Lato", sans-serif;
+                font-weight: 100;
+                font-style: normal;
+              }
+              
+              .lato-light {
+                font-family: "Lato", sans-serif;
+                font-weight: 300;
+                font-style: normal;
+              }
+              
+              .lato-regular {
+                font-family: "Lato", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+              }
+              
+              .lato-bold {
+                font-family: "Lato", sans-serif;
+                font-weight: 700;
+                font-style: normal;
+              }
+              
+              .lato-black {
+                font-family: "Lato", sans-serif;
+                font-weight: 900;
+                font-style: normal;
+              }
+              
+              .lato-thin-italic {
+                font-family: "Lato", sans-serif;
+                font-weight: 100;
+                font-style: italic;
+              }
+              
+              .lato-light-italic {
+                font-family: "Lato", sans-serif;
+                font-weight: 300;
+                font-style: italic;
+              }
+              
+              .lato-regular-italic {
+                font-family: "Lato", sans-serif;
+                font-weight: 400;
+                font-style: italic;
+              }
+              
+              .lato-bold-italic {
+                font-family: "Lato", sans-serif;
+                font-weight: 700;
+                font-style: italic;
+              }
+              
+              .lato-black-italic {
+                font-family: "Lato", sans-serif;
+                font-weight: 900;
+                font-style: italic;
+              }
+                                         
+@media (min-width: 576px) {
+  .container {
+    width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 95%;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 89%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 98%;
+  }
+}
+
+@layer utilities {
+  .tick {
+    display: inline-block;
+    width: 1.55rem;
+    height: 0.5rem;
+    border: 2px solid currentColor;
+    border-top: none;
+    border-right: none;
+    transform: rotate(-45deg);
+    margin-right: 0.25rem;
+  }
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+input[type="checkbox"] {
+  accent-color: var(--primary-600, #f58a07);
+  background-color: transparent !important;
+  @apply !bg-[#FFFFFF]/[8%];
+}
+.btn-brand {
+  @apply bg-brand text-white  px-10 py-3 rounded-[6px] text-sm;
+}
+.btn-light-border {
+  /* @apply border-white text-white border-2 px-10 py-3 rounded-md text-sm; */
+}
+::-webkit-scrollbar {
+  width: 0px;
+  /* width of the entire scrollbar */
+  /* height of the entire scrollbar */
+  height: 0px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #000D64;
+  /* color of the tracking area */
+}
+
+::-webkit-scrollbar-thumb {
+  /* color of the scroll thumb */
+  border-radius: 20px;
+  /* roundness of the scroll thumb */
+  /* border: 3px solid var(--primary-color); */
+  /* creates padding around scroll thumb */
+  @apply bg-[#000];
+}
+@media (max-width: 990px) {
+  .auth-container {
+    /* background: url('@/assets/svg/hero-g-g.svg') center center no-repeat; */
+    background-color: #f8f8f8;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+.ant-select-selector {
+  @apply !px-2 gap-[10px] font-medium text-[20px];
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+/* .Vue-Toastification__toast {
+ }
+
+.Vue-Toastification__toast--error svg {
+  @apply !text-[#E06F6F];
+}
+
+.Vue-Toastification__toast--error {
+  @apply !bg-white !text-black;
+}
+
+.Vue-Toastification__toast--success {
+  @apply !bg-white !text-black;
+}
+
+.Vue-Toastification__toast--success svg {
+  @apply !text-[#D3DA51];
+} */
+input[type="checkbox"] {
+  accent-color: #2f929c;
+}
+.vue-apexcharts {
+  max-height: 30%;
+}
+
+/* .Vue-Toastification__toast--error svg {
+    @apply !text-red-500;
+}
+
+.Vue-Toastification__toast--error {
+    @apply !bg-white !text-black;
+}
+
+.Vue-Toastification__toast--success {
+    @apply !bg-white !text-black;
+}
+
+.Vue-Toastification__toast--success svg {
+    @apply !text-green-500;
+} */
+.brand-linear-gradient{
+  background: linear-gradient(270.04deg, #00083B 0.04%, #01117A 99.97%);
+
+}
+.brand-gradient {
+  background: radial-gradient(
+    51.77% 139.58% at 49.48% 56.29%,
+    #001abf 0%,
+    #00159a 13%,
+    #000d64 35%,
+    #000738 55%,
+    #000319 74%,
+    #000006 89%,
+    #000000 100%
+  );
+  background-blend-mode: screen;
+}
+.card-linear-gradient {
+  background: linear-gradient(180deg, #18215D 0%, #000319 70.26%);
+}
+.brand-shadow{box-shadow: 0px 6px 30px 5px #0000001F;
+}
+.Gradient-button{
+background: linear-gradient(125.24deg, #CBFCC3 -33.88%, #03FDA2 127.31%);
+}
+.p-overlay-mask{
+  background: rgba(0, 0, 0, 0.5);}
+
+  .p-drawer-close-button{
+    @apply text-white;
+  }
+
+  .glass{/* From https://css.glass */
+background: rgba(255, 255, 255, 0.05);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(2.4px);
+-webkit-backdrop-filter: blur(2.4px);
+border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* .sidebar li a {
+    @apply px-5 py-2 w-full flex items-center gap-3 text-white hover:text-brand hover:bg-[#E8EAEB] transition-colors ease-in-out duration-200 cursor-pointer rounded-r-full;
+}
+.sidebar li button {
+    @apply px-5 py-2 w-full flex items-center gap-3 hover:bg-[#E8EAEB] transition-colors ease-in-out duration-200 cursor-pointer;
+}
+
+.sidebar li .router-link-active {
+    @apply bg-[#E8EAEB] text-brand;
+}
+
+.sidebar li .active {
+    @apply bg-[#E8EAEB]  text-brand;
+}
+
+.sidebar li .sublink-active {
+    @apply text-brand !bg-white;
+} */
+.card-blur {
+  backdrop-filter: blur(20px);
+}

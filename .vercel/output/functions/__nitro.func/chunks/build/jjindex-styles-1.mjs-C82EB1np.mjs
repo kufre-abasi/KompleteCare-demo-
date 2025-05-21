@@ -1,0 +1,4 @@
+const jjindex_vue_vue_type_style_index_0_scoped_60db455a_lang = ".sidebar[data-v-60db455a]{min-height:100vh;position:sticky;top:0}.row[data-v-60db455a]{display:flex;flex-wrap:nowrap}.custom-mt[data-v-60db455a]{margin-top:150px!important}.mainContent[data-v-60db455a]{margin-top:36px}.mainContent h1[data-v-60db455a]{color:#382f90;font-size:32px!important;font-weight:900;line-height:100%;margin-bottom:13px}.mainContent h5[data-v-60db455a]{color:#9fa2b4;font-size:16px!important;font-weight:500;margin-bottom:42px}.patientRecord[data-v-60db455a]{background:#fff}.patientRecord h3[data-v-60db455a]{color:#382f90;font-size:18px!important;font-weight:900}.logOut[data-v-60db455a]{cursor:pointer}";
+
+export { jjindex_vue_vue_type_style_index_0_scoped_60db455a_lang as j };
+//# sourceMappingURL=jjindex-styles-1.mjs-C82EB1np.mjs.map
