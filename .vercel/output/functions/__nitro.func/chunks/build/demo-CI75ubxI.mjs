@@ -31,7 +31,7 @@ const _imports_0 = publicAssetsURL("/icons/inbox.svg");
 const _imports_1 = publicAssetsURL("/icons/notification.svg");
 const _imports_2 = publicAssetsURL("/icons/myProfile.svg");
 const _sfc_main = /* @__PURE__ */ defineComponent({
-  __name: "jjindex",
+  __name: "demo",
   __ssrInlineRender: true,
   setup(__props) {
     const { result, loading: showLoading } = useQuery(INVESTIGATIONS_REQUEST);
@@ -71,23 +71,23 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
       _push(`<div${ssrRenderAttrs(mergeProps({
         class: "container-fluid px-0",
         style: { "background": "#f5f5fb" }
-      }, _attrs))} data-v-60db455a><div class="row g-0" mx-0 data-v-60db455a><div class="col-md-2 d-none d-md-block sidebar" style="${ssrRenderStyle({ "background": "#ffff" })}" data-v-60db455a><ul class="nav flex-column custom-mt hidden" data-v-60db455a><!--[-->`);
+      }, _attrs))} data-v-85506aff><div class="row g-0" mx-0 data-v-85506aff><div class="col-md-2 d-none d-md-block sidebar" style="${ssrRenderStyle({ "background": "#ffff" })}" data-v-85506aff><ul class="nav flex-column custom-mt hidden" data-v-85506aff><!--[-->`);
       ssrRenderList(navItems, (item) => {
-        _push(`<li class="nav-item" style="${ssrRenderStyle(item.style)}" data-v-60db455a>`);
+        _push(`<li class="nav-item" style="${ssrRenderStyle(item.style)}" data-v-85506aff>`);
         if (item.text !== "Logout") {
-          _push(`<a style="${ssrRenderStyle([{}, item.active ? activeStyle : inactiveStyle])}" class="${ssrRenderClass([{ active: item.active }, "nav-link"])}" data-v-60db455a><img${ssrRenderAttr("src", "/icons/" + item.icon)}${ssrRenderAttr("alt", item.text)} class="nav-icon me-3" data-v-60db455a> ${ssrInterpolate(item.text)}</a>`);
+          _push(`<a style="${ssrRenderStyle([{}, item.active ? activeStyle : inactiveStyle])}" class="${ssrRenderClass([{ active: item.active }, "nav-link"])}" data-v-85506aff><img${ssrRenderAttr("src", "/icons/" + item.icon)}${ssrRenderAttr("alt", item.text)} class="nav-icon me-3" data-v-85506aff> ${ssrInterpolate(item.text)}</a>`);
         } else {
-          _push(`<button style="${ssrRenderStyle(item.active ? activeStyle : inactiveStyle)}" class="logOut" data-v-60db455a><img${ssrRenderAttr("src", "/icons/" + item.icon)}${ssrRenderAttr("alt", item.text)} class="nav-icon me-3" data-v-60db455a> ${ssrInterpolate(item.text)}</button>`);
+          _push(`<button style="${ssrRenderStyle(item.active ? activeStyle : inactiveStyle)}" class="logOut" data-v-85506aff><img${ssrRenderAttr("src", "/icons/" + item.icon)}${ssrRenderAttr("alt", item.text)} class="nav-icon me-3" data-v-85506aff> ${ssrInterpolate(item.text)}</button>`);
         }
         _push(`</li>`);
       });
-      _push(`<!--]--></ul></div><div class="col-md-10 hidden" data-v-60db455a><div class="d-flex align-items-center justify-content-end gap-4 border-5 mt-5" data-v-60db455a><p class="mb-0" data-v-60db455a>Take a tour</p><img${ssrRenderAttr("src", _imports_0)} alt="inbox" data-v-60db455a><img${ssrRenderAttr("src", _imports_1)} alt="notification" data-v-60db455a><img${ssrRenderAttr("src", _imports_2)} alt="myProfile" data-v-60db455a></div><div class="mainContent container" data-v-60db455a><h1 data-v-60db455a>Update Patient Medical Record</h1><h5 data-v-60db455a>Click the tabs to view and edit patient medical details</h5><div class="patientRecord" data-v-60db455a>`);
+      _push(`<!--]--></ul></div><div class="col-md-10 hidden" data-v-85506aff><div class="d-flex align-items-center justify-content-end gap-4 border-5 mt-5" data-v-85506aff><p class="mb-0" data-v-85506aff>Take a tour</p><img${ssrRenderAttr("src", _imports_0)} alt="inbox" data-v-85506aff><img${ssrRenderAttr("src", _imports_1)} alt="notification" data-v-85506aff><img${ssrRenderAttr("src", _imports_2)} alt="myProfile" data-v-85506aff></div><div class="mainContent container" data-v-85506aff><h1 data-v-85506aff>Update Patient Medical Record</h1><h5 data-v-85506aff>Click the tabs to view and edit patient medical details</h5><div class="patientRecord" data-v-85506aff>`);
       if (unref(investigationsArray).length > 0 && !unref(showLoading)) {
         _push(`<!--[-->`);
         ssrRenderList(unref(investigationsArray), ({ id, title, investigations }) => {
-          _push(`<div data-v-60db455a><h3 class="p-5" data-v-60db455a>${ssrInterpolate(title)}</h3><ul data-v-60db455a><!--[-->`);
+          _push(`<div data-v-85506aff><h3 class="p-5" data-v-85506aff>${ssrInterpolate(title)}</h3><ul data-v-85506aff><!--[-->`);
           ssrRenderList(investigations, (investigation) => {
-            _push(`<li data-v-60db455a>${ssrInterpolate(investigation.title)} - ${ssrInterpolate(investigation.id)}</li>`);
+            _push(`<li data-v-85506aff>${ssrInterpolate(investigation.title)} - ${ssrInterpolate(investigation.id)}</li>`);
           });
           _push(`<!--]--></ul></div>`);
         });
@@ -102,10 +102,10 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
 const _sfc_setup = _sfc_main.setup;
 _sfc_main.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("pages/jjindex.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("pages/demo.vue");
   return _sfc_setup ? _sfc_setup(props, ctx) : void 0;
 };
-const jjindex = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-60db455a"]]);
+const demo = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-85506aff"]]);
 
-export { jjindex as default };
-//# sourceMappingURL=jjindex-CK7DYTUV.mjs.map
+export { demo as default };
+//# sourceMappingURL=demo-CI75ubxI.mjs.map

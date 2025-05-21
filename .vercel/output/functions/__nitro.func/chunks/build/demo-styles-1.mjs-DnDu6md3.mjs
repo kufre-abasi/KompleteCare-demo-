@@ -1,0 +1,4 @@
+const demo_vue_vue_type_style_index_0_scoped_85506aff_lang = ".sidebar[data-v-85506aff]{min-height:100vh;position:sticky;top:0}.row[data-v-85506aff]{display:flex;flex-wrap:nowrap}.custom-mt[data-v-85506aff]{margin-top:150px!important}.mainContent[data-v-85506aff]{margin-top:36px}.mainContent h1[data-v-85506aff]{color:#382f90;font-size:32px!important;font-weight:900;line-height:100%;margin-bottom:13px}.mainContent h5[data-v-85506aff]{color:#9fa2b4;font-size:16px!important;font-weight:500;margin-bottom:42px}.patientRecord[data-v-85506aff]{background:#fff}.patientRecord h3[data-v-85506aff]{color:#382f90;font-size:18px!important;font-weight:900}.logOut[data-v-85506aff]{cursor:pointer}";
+
+export { demo_vue_vue_type_style_index_0_scoped_85506aff_lang as d };
+//# sourceMappingURL=demo-styles-1.mjs-DnDu6md3.mjs.map

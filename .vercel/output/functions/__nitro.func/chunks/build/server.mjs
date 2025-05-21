@@ -4310,6 +4310,11 @@ function handleHotUpdate(_router, _generateRoutes) {
 }
 const _routes = [
   {
+    name: "demo",
+    path: "/demo",
+    component: () => import('./demo-CI75ubxI.mjs')
+  },
+  {
     name: "index",
     path: "/",
     component: () => import('./index-C9Dc4I8P.mjs')
@@ -4318,11 +4323,6 @@ const _routes = [
     name: "login",
     path: "/login",
     component: () => import('./login-D_QH5udt.mjs')
-  },
-  {
-    name: "jjindex",
-    path: "/jjindex",
-    component: () => import('./jjindex-CK7DYTUV.mjs')
   }
 ];
 const ROUTE_KEY_PARENTHESES_RE = /(:\w+)\([^)]+\)/g;
